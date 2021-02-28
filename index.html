@@ -32,8 +32,8 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div class="col col-md-4 col-xl-2 text-right text-nowrap">
-                    <a class="btn btn-info mt-4 btn-lg" href="#reserveForm" role="button">Reserve Campsite</a>
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-info btn-lg" href="#reserveForm" role="button">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -113,19 +113,19 @@
                 </div>
             </div>
         </div>
-        <form id="reserveForm">
-            <div class="row rowcontent">
-                <div class="col-sm-6 form-group mx-auto">
-                    <div class="card">
-                        <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <label for="numCampers" class="col-sm-6 col-form-label-xs col-form-label-sm"> Number
-                                        of
-                                        Campers</label>
-                                    <select type="numCampers" class="col form-control-sm" id="numCampers">
-                                        <option value="select">Select</option>
+
+        <div class="row rowcontent">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label"> Number of
+                                    Campers</label>
+                                <div class="col">
+                                    <select type="numCampers" class="form-control" id="numCampers">
+                                        <option value="select">Select..</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -134,31 +134,27 @@
                                         <option value="6">6</option>
                                     </select>
                                 </div>
-
-                                <div class="form-group">
-                                    <div class="row">
-                                        <label for="date" class="col-sm-6 col-form-label-sm">Date</label>
-                                        <input type="date" class="col col-sm form-control-sm" id="date"
-                                            placeholder="Date">
-                                    </div>
-
-
-                                </div>
-
                             </div>
-                        </div class="row form-group">
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary">Search</button><br><br>
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label-sm">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" placeholder="Date">
+                                </div>
+                            </div>
 
-                        </div>
+
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button><br><br>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
     </div>
 
-    </div>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
