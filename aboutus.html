@@ -5,30 +5,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
 <body>
-    <a href="index.html"><img src="img/logo.png" class="img-fluid" />
-        <header class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                        <img src="img/logo.png" class="img-fluid" />
-                        <div class="col">
-                            <h1>NuCamp</h1>
-                            <h2>a better way to camp</h2>
-                        </div>
-                    </div>
-                </div>
-    </a>
-    </header>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-sm-3 col-md-2 align-self-center">
+              <img src="img/logo.png" class="img-fluid" />
+            </div>
+    
+            <div class="col">
+              <h1>NuCamp</h1>
+              <h2>a better way to camp</h2>
+            </div>
+    
+            <div class="col-md-4 col-xl-2 mt-4">
+              <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target=" #reserveModal">Reserve
+                Campsite</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
@@ -138,10 +145,12 @@
 
                     <div class="card">
                         <div role="tab" class="card-header">
-                            <h4><a class="collapsed" data-toggle="collapse" data-target="#mongo">Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></a></h4>
+                            <h4><a class="collapsed" data-toggle="collapse" data-target="#mongo">Mongo Fly Shop
+                                    <small>Your Neighborhood Fly Fishing Shop</small></a></h4>
                             <div class="collapse" id="mongo" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                                    <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all
+                                        kinds? Stop by Mongo Fly Shop.</p>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +158,8 @@
 
                     <div class="card">
                         <div role="tab" class="card-header">
-                            <h4><a class="collapsed" data-toggle="collapse" data-target="#node">Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></a>
+                            <h4><a class="collapsed" data-toggle="collapse" data-target="#node">Node Outdoor Apparel
+                                    <small>Outdoor Clothes & Shoes</small></a>
                             </h4>
                             <div class="collapse" id="node" data-parent="#accordion">
                                 <div class="card-body">
@@ -234,11 +244,16 @@
                         </div>
                     </div>
                 </footer>
+            </div>
+        </div>
+    </div>
 
-                <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-                <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-                <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js">  </script>
+    <!-- endbuild -->
 </body>
 
 </html>
